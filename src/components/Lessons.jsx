@@ -3,7 +3,7 @@ import Palace from '../assets/photopeople.jpg'
 
 const Lessons = () => {
   return (
-    <div className='w-full bg-white py16 px-4'>
+    <div className='w-full bg-gray-100 py16 px-4'>
       <div className='max-w-[1200px] mx-auto grid md:grid-cols-2'>
         <img className='w-[500px] mx-auto my-4' src={Palace} alt='/'></img>
         <div className='flex flex-col justify-center'>
