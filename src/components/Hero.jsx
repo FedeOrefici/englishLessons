@@ -3,7 +3,7 @@ import Typed from "typed.js";
 import { useEffect, useRef } from 'react';
 
 const Hero = () => {
-    const element = useRef(null)
+    const element = useRef(null);
     
     useEffect(() => {
         const typed = new Typed(element.current, {
