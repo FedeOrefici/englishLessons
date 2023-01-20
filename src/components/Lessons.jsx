@@ -13,7 +13,7 @@ const Lessons = () => {
                exercitation veniam exercitation dolor labore incididunt
                officia magna. Amet deserunt incididunt irure laboris cupidatat quis.
             </p>
-            <button className='bg-black w-[200px] rounded-md font-medium my-6 mx-auto py-3 text-[#00df9a] md:mx-0'>Начать</button>
+            <button className='bg-black w-[200px] rounded-md font-medium my-6 mx-auto py-3 text-[#00df9a] md:mx-0'>тест</button>
         </div>
       </div>
     </div>

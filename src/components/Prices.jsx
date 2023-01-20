@@ -23,7 +23,7 @@ const Prices = () => {
             <h2 className='text-2xl font-bold text-center py-4'>два урока в неделю</h2>
             <p className='text-center text-4xl font-bold'>₽1800</p>
             <div className='text-center font-medium'>
-                <p className='py-2'>два урока в неделю</p>
+                <p className='py-2'>получить доступ к домашним заданиям онлайн</p>
                 <p className='py-2'>домашнее задание</p>
             </div>
             <button className='bg-black w-[200px] rounded-md font-medium my-6 mx-auto py-3 text-[#00df9a]'>Начало</button>
