@@ -2,6 +2,10 @@ import React from "react";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import email from '../assets/email.png';
 import * as Yup from 'yup';
+import { useState } from "react";
+import Modal from "./Modal";
+import emailjs from 'emailjs-com';
+
 
 const initialValues ={
     name: '',
@@ -9,8 +13,10 @@ const initialValues ={
     message: ''
 };
 
-const onSubmit = (values) => {
-    console.log(values);
+const onSubmit = (initialValues, {resetForm}) => {
+    console.log(initialValues);
+    resetForm({initialValues:{name:'', email:'', message:''}});
+
 };
 
 
@@ -23,8 +29,11 @@ const validationSchema = Yup.object({
             .required('Required!')
 })
 
-const Formulary = () => {
 
+
+const Formulary = () => {
+    //modal State
+    const [openModal, setOpenModal] = useState(false);
 
   return (
     <>
@@ -46,7 +55,8 @@ const Formulary = () => {
                 className="border border-gray-400 bg-white mt-1 p-1 rounded"
                 />
 
-                <ErrorMessage 
+                <ErrorMessage
+                component='div'
                 className="bg-red-600 rounded text-center text-[white] p-1 mt-1"
                 name='name'/>
 
@@ -57,7 +67,8 @@ const Formulary = () => {
                 className="border border-gray-400 bg-white mt-1 p-1 rounded"
                 />
 
-                <ErrorMessage 
+                <ErrorMessage
+                component='div'
                 className="bg-red-600 rounded text-center text-[white] p-1 mt-1"
                 name='email'/>
 
@@ -69,10 +80,18 @@ const Formulary = () => {
                 />
 
             <ErrorMessage
+            component='div'
             className="bg-red-600 rounded text-center text-[white] p-1 mt-1"
             name='message'/>
 
-            <button className="bg-black w-[200px] rounded-md font-medium my-6 mx-auto py-3 text-[#00df9a]" type="submit">Отправить</button>
+            <button 
+            onClick={() => {
+                setOpenModal(true)
+            }}
+            className="bg-black w-[200px] rounded-md font-medium my-6 mx-auto py-3 text-[#00df9a]" type="submit">
+            Отправить
+            </button>
+            {(openModal) && <Modal open={openModal} onClose={() => setOpenModal(false)} />}
         
         </Form>
 
