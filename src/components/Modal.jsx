@@ -12,9 +12,9 @@ const Modal = ({open, onClose}) => {
             <div>
                 <h1 className='text-2xl text-center pt-6'>Спасибо за ваше сообщение!</h1>
             </div>
-            <button
+            {/* <button
             onClick={onClose}
-            className='bg-[#00df9a] w-[200px] rounded-md font-medium my-6 mx-auto py-3 text-black shadow-xl'>Закрыть</button>
+            className='bg-[#00df9a] w-[200px] rounded-md font-medium my-6 mx-auto py-3 text-black shadow-xl'>Закрыть</button> */}
         </div>
     
   )
