@@ -4,6 +4,7 @@ import Lessons from './components/Lessons';
 import Prices from './components/Prices';
 import Footer from './components/Footer';
 import Formulary from './components/Form';
+import MainTest from './components/MainTest';
 
 
 function App() {
