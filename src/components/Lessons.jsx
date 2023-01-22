@@ -7,7 +7,7 @@ const Lessons = () => {
   const [openTest, setOpenTest] = useState(false)
 
   return (
-    <div className='w-full bg-gray-100 py16 px-4'>
+    <div className='w-full bg-gray-100 py16 px-4' id='lessons'>
       <div className='max-w-[1200px] mx-auto grid md:grid-cols-2'>
         <img className='w-[500px] mx-auto my-4' src={people} alt='/'></img>
         <div className='flex flex-col justify-center'>

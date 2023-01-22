@@ -5,7 +5,7 @@ import photo3 from '../assets/towerBridge.jpg';
 
 const Prices = () => {
   return (
-    <div className='w-full py-[10rem] px-4 bg-[#00df9a]'>
+    <div className='w-full py-[10rem] px-4 bg-[#00df9a]' id='prices'>
       <div className='max-w-[1200px] mx-auto grid grid-cols-3 gap-8'>
         <div className='w-full shadow-xl flex flex-col p-4 my-4 rounded-lg hover:scale-105 duration-300 bg-gray-300'>
             <img className='w-15 mx-auto rounded' src={photo1} alt='/'/>

@@ -49,7 +49,7 @@ const Formulary = () => {
 
   return (
     <>
-        <div className="w-full bg-gray-100 mx-auto flex justify-center items-center gap-20">
+        <div className="w-full bg-gray-100 mx-auto flex justify-center items-center gap-20" id="contact">
 
             <Formik
             initialValues={initialValues}
