@@ -11,7 +11,7 @@ const MainTest = () => {
     const handleAnswerSubmit = (isCorrect) => {
         //add points
         if(isCorrect) setPoints(points + 1)
-        
+    
         setTimeout(() => {
             if(actualQuestion === questions.length -1){
                 setIsFinished(true);
@@ -19,7 +19,7 @@ const MainTest = () => {
                 setActualQuestion(actualQuestion + 1)
             }
         },[1000]);
-    }
+    };
 
     if(isFinished) return (
             <main className='fixed inset-0 mt-32 mx-auto bg-gray-100 w-[800px] h-96 rounded text-center flex justify-center items-center flex-col shadow-xl'>
@@ -27,8 +27,9 @@ const MainTest = () => {
                 <button 
                 onClick={() => window.location.href='/'}
                 className='bg-[#00df9a] hover:bg-[#00dfad] w-[200px] text-black rounded py-3 mt-6 shadow-xl'>назад</button>
+
             </main>
-    )
+    );
     
 
   return (

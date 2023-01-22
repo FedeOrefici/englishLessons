@@ -1,6 +1,7 @@
 import React from 'react';
 import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
 import { useState } from 'react';
+import { Link } from 'react-scroll';
 
 const NavBar = () => {
     const [nav, setNav] = useState(false);
@@ -11,8 +12,10 @@ const NavBar = () => {
   return (
     <div className='flex justify-between items-center h-24 max-w-[1240px] mx-auto px-4 text-white'>
       <h1 className='w-full text-3xl font-bold text-[#00df9a]'>уроки английского</h1>
-      <ul className='hidden md:flex'>
-        <li className='p-4' id='home'>Home</li>
+      <ul className='hidden md:flex mr-5'>
+      <Link>
+        
+        </Link>
         <li className='p-4' id='lessons'>уроки</li>
         <li className='p-4' id='prices'>Цены</li>
         <li className='p-4' id='contact'>контакт</li>
