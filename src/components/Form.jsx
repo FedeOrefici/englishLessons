@@ -49,7 +49,7 @@ const Formulary = () => {
 
   return (
     <>
-        <div className="w-full bg-gray-100 mx-auto flex justify-center items-center gap-20" id="contact">
+        <div className="w-full bg-gray-100 mx-auto flex justify-center items-center gap-20 max-sm:flex-col" id="contact">
 
             <Formik
             initialValues={initialValues}
@@ -58,11 +58,11 @@ const Formulary = () => {
             >
             
             <Form
-            className="w-2/4 flex flex-col p-20 my-12 rounded-lg bg-[#00df9a] shadow-xl"
+            className="w-2/4 flex flex-col p-20 my-12 rounded-lg bg-[#00df9a] shadow-xl max-sm:w-96"
             onSubmit={sendEmailMessage}>
 
                     <label className='mt-6'>имя</label>
-                    <Field 
+                    <Field
                     id='name' type='text' placeholder='имя...'
                     name='name'
                     className="border border-gray-400 bg-white mt-1 p-1 rounded"
@@ -110,7 +110,7 @@ const Formulary = () => {
 
             </Formik>
 
-            <div className="flex justify-center items-center flex-col">
+            <div className="flex justify-center items-center flex-col max-sm:mb-40">
                 <img src={email} alt="iconContact" />
                 <h1 className="font-bold text-4xl text-[#00df9a]">контакт</h1>
                 <p className="font-normal">Свяжитесь с нами и начните учить английский</p>

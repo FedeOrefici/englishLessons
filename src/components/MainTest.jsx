@@ -22,8 +22,8 @@ const MainTest = () => {
     };
 
     if(isFinished) return (
-            <main className='fixed inset-0 mt-32 mx-auto bg-gray-100 w-[800px] h-96 rounded text-center flex justify-center items-center flex-col shadow-xl'>
-                <span className='text-3xl'>ты получил {points} из {questions.length}</span>
+            <main className='fixed inset-0 mt-32 mx-auto bg-gray-100 w-[800px] h-96 rounded text-center flex justify-center items-center flex-col shadow-xl max-sm:w-[300px]'>
+                <span className='text-3xl max-sm:text-2xl'>ты получил {points} из {questions.length}</span>
                 <button 
                 onClick={() => window.location.href='/'}
                 className='bg-[#00df9a] hover:bg-[#00dfad] w-[200px] text-black rounded py-3 mt-6 shadow-xl'>назад</button>
@@ -33,10 +33,10 @@ const MainTest = () => {
     
 
   return (
-    <main className='fixed inset-0 mt-32 mx-auto bg-gray-200 w-[800px] h-96 rounded text-center flex justify-center items-center flex-col shadow-xl'>
-        <span>Question: {actualQuestion + 1} of {questions.length}</span> 
-            <div className='w-[500px] bg-[#00df9a] rounded py-3 my-6'>{questions[actualQuestion].title}</div>
-            <div className='flex justify-center items-center gap-10'>
+    <main className='fixed inset-0 mt-32 mx-auto bg-gray-200 w-[800px] h-96 rounded text-center flex justify-center items-center flex-col shadow-xl max-sm:w-[400px] max-sm:h-[600px]'>
+        <span className='max-sm:mt-6'>Question: {actualQuestion + 1} of {questions.length}</span> 
+            <div className='w-[500px] bg-[#00df9a] rounded py-3 my-6 max-sm:w-[300px] max-sm:pt-3'>{questions[actualQuestion].title}</div>
+            <div className='flex justify-center items-center gap-10 max-sm:flex-col max-sm:gap-0'>
                 {questions[actualQuestion].options.map((answer) => (
                     <button 
                     key={answer.textAnswer}
