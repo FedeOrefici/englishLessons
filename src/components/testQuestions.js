@@ -17,6 +17,16 @@ const questions = [
     ],
 },
 
+    {
+        title: 'Do you love me?',
+        options: [
+            {textAnswer: 'YES, A LOTTTTT', isCorrect: true},
+            {textAnswer: 'I DONT KNOW', isCorrect: false},
+            {textAnswer: 'IM OFFENDED', isCorrect: false},
+
+        ]
+    }
+
     
 ];
 
