@@ -62,7 +62,7 @@ const Formulary = () => {
             >
             
             <Form
-            className="w-[500px] flex flex-col p-20 my-12 rounded-lg bg-[#00df9a] shadow-xl max-sm:[200px]"
+            className="w-[500px] mx-auto flex flex-col p-20 my-12 rounded-lg bg-[#00df9a] shadow-xl max-sm:[auto]"
             onSubmit={sendEmailMessage}>
 
                     <label className='mt-6'>имя</label>
