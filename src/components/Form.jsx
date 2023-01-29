@@ -105,7 +105,7 @@ const Formulary = () => {
                 onClick={() => {
                     setOpenModal(true)
                 }}
-                className="bg-black w-[200px] rounded-md font-medium my-6 mx-auto py-3 text-[#00df9a] max-sm:text-center" type="submit">
+                className="bg-black w-[200px] rounded-md font-medium my-6 mx-auto py-3 text-[#00df9a] max-sm:-[200px]" type="submit">
                 Отправить
                 </button>
                 {(openModal) && <Modal open={openModal} />}
