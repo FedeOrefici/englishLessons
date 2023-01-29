@@ -49,7 +49,7 @@ const Formulary = () => {
 
   return (
     <>
-        <div className="w-full bg-gray-100 mx-auto flex justify-center items-center gap-20 max-sm:flex-col max-sm:gap-0" id="contact">
+        <div className="w-full bg-gray-100 mx-auto flex justify-center items-center max-sm:flex-col max-sm:gap-0" id="contact">
 
 
             <h1 className="font-bold text-5xl text-black max-sm:pt-10 sm:hidden">контакт</h1>
@@ -62,7 +62,7 @@ const Formulary = () => {
             >
             
             <Form
-            className="w-[500px] mx-auto flex flex-col p-20 my-12 rounded-lg bg-[#00df9a] shadow-xl max-sm:[auto]"
+            className="w-[500px] flex flex-col p-20 my-12 mx-auto rounded-lg bg-[#00df9a] shadow-xl max-sm:w-[300px]"
             onSubmit={sendEmailMessage}>
 
                     <label className='mt-6'>имя</label>
@@ -93,7 +93,7 @@ const Formulary = () => {
                     <Field
                     id='message' type='text'
                     name='message'
-                    className="border border-gray-400 bg-white mt-1 h-32 rounded"
+                    className="border border-gray-400 bg-white h-32 rounded col-auto row-span-full"
                     />
 
                 <ErrorMessage
@@ -105,7 +105,7 @@ const Formulary = () => {
                 onClick={() => {
                     setOpenModal(true)
                 }}
-                className="bg-black w-[200px] rounded-md font-medium my-6 mx-auto py-3 text-[#00df9a]" type="submit">
+                className="bg-black w-[200px] rounded-md font-medium my-6 mx-auto py-3 text-[#00df9a] max-sm:w-[100px]" type="submit">
                 Отправить
                 </button>
                 {(openModal) && <Modal open={openModal} />}
@@ -114,7 +114,7 @@ const Formulary = () => {
 
             </Formik>
 
-            <div className="flex justify-center items-center flex-col max-sm:mb-40">
+            <div className="flex justify-center items-center flex-col max-sm:mb-40 mx-auto">
                 <img src={email} alt="iconContact" className="max-sm:hidden" />
                 <h1 className="font-bold text-4xl text-[#00df9a] max-sm:hidden">контакт</h1>
                 <p className="font-normal max-sm:hidden">Свяжитесь с нами и начните учить английский</p>
