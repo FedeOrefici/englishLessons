@@ -69,7 +69,7 @@ const Formulary = () => {
                     <Field
                     id='name' type='text' placeholder='имя...'
                     name='name'
-                    className="border border-gray-400 bg-white mt-1 rounded max-sm:w-[100px]"
+                    className="border border-gray-400 bg-white mt-1 rounded"
                     />
 
                     <ErrorMessage
@@ -81,7 +81,7 @@ const Formulary = () => {
                     <Field 
                     id='email' type='email' placeholder='Эл. адрес...'
                     name='email'
-                    className="border border-gray-400 bg-white mt-1 rounded max-sm:w-[100px]"
+                    className="border border-gray-400 bg-white mt-1 rounded"
                     />
 
                     <ErrorMessage
@@ -93,7 +93,7 @@ const Formulary = () => {
                     <Field
                     id='message' type='text'
                     name='message'
-                    className="border border-gray-400 bg-white h-32 rounded col-auto row-span-full max-sm:w-[100px]"
+                    className="border border-gray-400 bg-white h-32 rounded col-auto row-span-full"
                     />
 
                 <ErrorMessage
@@ -105,7 +105,7 @@ const Formulary = () => {
                 onClick={() => {
                     setOpenModal(true)
                 }}
-                className="bg-black w-[200px] rounded-md font-medium my-6 mx-auto py-3 text-[#00df9a] max-sm:w-[100px]" type="submit">
+                className="bg-black w-[200px] rounded-md font-medium my-6 mx-auto py-3 text-[#00df9a]" type="submit">
                 Отправить
                 </button>
                 {(openModal) && <Modal open={openModal} />}
