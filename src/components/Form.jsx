@@ -62,7 +62,7 @@ const Formulary = () => {
             >
             
             <Form
-            className="w-[500px] flex flex-col p-20 my-12 mx-auto rounded-lg bg-[#00df9a] shadow-xl max-sm:w-[300px] max-sm:items-center"
+            className="w-[500px] flex flex-col p-20 my-12 mx-auto rounded-lg bg-[#00df9a] shadow-xl max-sm:w-[300px]"
             onSubmit={sendEmailMessage}>
 
                     <label className='mt-6'>имя</label>
@@ -105,7 +105,7 @@ const Formulary = () => {
                 onClick={() => {
                     setOpenModal(true)
                 }}
-                className="bg-black w-[200px] rounded font-medium my-6 py-3 text-[#00df9a] mx-auto" type="submit">
+                className="bg-black w-[200px] rounded font-medium my-6 py-3 text-[#00df9a] mx-auto max-sm:w-auto max-sm:p-4" type="submit">
                 Отправить
                 </button>
                 {(openModal) && <Modal open={openModal} />}
