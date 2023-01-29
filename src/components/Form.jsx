@@ -69,7 +69,7 @@ const Formulary = () => {
                     <Field
                     id='name' type='text' placeholder='имя...'
                     name='name'
-                    className="border border-gray-400 bg-white mt-1 p-1 rounded"
+                    className="border border-gray-400 bg-white mt-1 p-1 rounded max-sm:w-[200px]"
                     />
 
                     <ErrorMessage
@@ -81,7 +81,7 @@ const Formulary = () => {
                     <Field 
                     id='email' type='email' placeholder='Эл. адрес...'
                     name='email'
-                    className="border border-gray-400 bg-white mt-1 p-1 rounded"
+                    className="border border-gray-400 bg-white mt-1 p-1 rounded max-sm:w-[200px]"
                     />
 
                     <ErrorMessage
@@ -93,7 +93,7 @@ const Formulary = () => {
                     <Field
                     id='message' type='text'
                     name='message'
-                    className="border border-gray-400 bg-white h-32 rounded col-auto row-span-full"
+                    className="border border-gray-400 bg-white h-32 rounded col-auto row-span-full max-sm:w-[200px]"
                     />
 
                 <ErrorMessage
